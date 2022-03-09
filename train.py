@@ -84,6 +84,8 @@ elif dataset_name == 'en_ace05':  # three runs: 85.39/84.54/84.75
     args.batch_size = 12
     args.num_beams = 4
     args.warmup_ratio = 0.1
+elif dataset_name == 'conll-hybridtag':  # three runs get 93.18/93.18/93.36 F1
+    max_len, max_len_a = 50, 0.6
 
 
 save_model = args.save_model
