@@ -172,7 +172,7 @@ class BartNERPipe(Pipe):
             target.append(1)  # 特殊的eos
 
             word_bpes = list(chain(*word_bpes))
-            assert len(word_bpes)<500
+            # assert len(word_bpes)<500
 
             dict  = {'tgt_tokens': target, 'target_span': pairs, 'src_tokens': word_bpes,
                     'first': first}

@@ -50,7 +50,8 @@ eval_start_epoch = 15
 
 # the following hyper-parameters are for target_type=word
 if dataset_name == 'conll2003':  # three runs get 93.18/93.18/93.36 F1
-    max_len, max_len_a = 10, 0.6
+    # max_len, max_len_a = 10, 0.6
+    max_len, max_len_a = 50, 0.6
 elif dataset_name == 'en-ontonotes':  # three runs get 90.46/90.4/90/52 F1
     max_len, max_len_a = 10, 0.8
 elif dataset_name == 'CADEC':
