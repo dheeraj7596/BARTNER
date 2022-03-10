@@ -33,7 +33,7 @@ parser.add_argument('--dataset_name', default='conll2003', type=str)
 args= parser.parse_args()
 dataset_name = args.dataset_name
 args.length_penalty = 1
-args.save_model = 0
+args.save_model = 1
 
 # word: 生成word的start; bpe: 生成所有的bpe; span: 每一段按照start end生成; span_bpe: 每一段都是start的所有bpe，end的所有bpe
 args.target_type = 'word'
