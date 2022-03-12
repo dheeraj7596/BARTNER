@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 
 dataset_name = 'conll2003'
-model_path = 'save_models/best_SequenceGeneratorModel_f_2021-06-09-01-47-26-903275'  # you can set args.save_model=1 in train.py
+model_path = 'save_models/best_SequenceGeneratorModel_f_2022-03-10-11-35-39-127933'  # you can set args.save_model=1 in train.py
 bart_name = 'facebook/bart-large'
 target_type = 'word'
 device = 'cuda:0'
